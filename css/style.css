@@ -5,7 +5,6 @@
 *::after {
   padding: 0;
   margin: 0;
-  block-size: border-box;
 }
 
 body {
@@ -17,24 +16,24 @@ body {
   width: 100px
 }
 
-.header {
+header {
   position: absolute;
   z-index: 9999;
   width: 100%;
-  padding: 0.9rem 0;
   top: 0;
   left: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 header nav {
-  color: red;
+  border-bottom: 1px solid white;
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 header ul {
@@ -67,7 +66,7 @@ header ul a {
   height: 37px;
   display: flex;
   border-radius: 50%;
-  background-color: rgba(115, 115, 115, 0.7);
+  background-color: rgba(115, 115, 115, 0);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   justify-content: center;
@@ -77,7 +76,7 @@ header ul a {
 .hamburger .bar {
   position: relative;
   width: 52%;
-  height: 1.3px;
+  height: 1.4px;
   background-color: #fff;
   border-radius: 2px;
 }
@@ -103,7 +102,7 @@ header ul a {
 }
 
 main {
-  color: #353;
+
   position: relative;
   height: 100vh;
   width: 100vw;
@@ -119,8 +118,9 @@ main {
   position: absolute;
   z-index: 1;
   width: 2800px;
-  top: calc(50% - 390px);
-  left: calc(50% + 10px);
+  top: calc(50% - 305px);
+  left: calc(50% + 190px);
+
 }
 
 .fog-7 {
@@ -135,15 +135,15 @@ main {
   position: absolute;
   z-index: 3;
   width: 870px;
-  top: calc(50% + 69px);
-  left: calc(50% + 230px);
+  top: calc(50% + 76px);
+  left: calc(50% + 225px);
 }
 
 .fog-6 {
   position: absolute;
   z-index: 4;
   width: 1610px;
-  top: calc(50% + 85px);
+  top: calc(50% + 290px);
   left: calc(50% + 10px);
 }
 
@@ -159,7 +159,7 @@ main {
   position: absolute;
   z-index: 6;
   width: 810px;
-  top: calc(50% + 86px);
+  top: calc(50% + 157px);
   left: calc(50% - 202px);
 }
 
@@ -187,6 +187,7 @@ main {
   transform: translate(-50%, -50%);
   text-align: center;
   text-transform: uppercase;
+  pointer-events: auto;
   color: #fff;
 }
 
@@ -206,8 +207,8 @@ main {
   position: absolute;
   z-index: 10;
   width: 408px;
-  top: calc(50% + 60px);
-  left: calc(50% + 590px);
+  top: calc(50% + 115px);
+  left: calc(50% + 419px);
 }
 
 .fog-4 {
@@ -238,9 +239,9 @@ main {
 .mountain-4 {
   position: absolute;
   z-index: 14;
-  width: 464px;
-  top: calc(50% + 196px);
-  left: calc(50% + 381.5px);
+  width: 796px;
+  top: calc(50% + 194px);
+  left: calc(50% - 381.5px);
 }
 
 .mountain-3 {
@@ -248,7 +249,7 @@ main {
   z-index: 15;
   width: 419px;
   top: calc(50% + 133px);
-  left: calc(50% + 736px);
+  left: calc(50% + 561px);
 }
 
 .fog-2 {
@@ -262,9 +263,9 @@ main {
 .mountain-2 {
   position: absolute;
   z-index: 17;
-  width: 625px;
-  top: calc(50% + 188px);
-  left: calc(50% + 412px);
+  width: 675px;
+  top: calc(50% + 200px);
+  left: calc(50% + 230px);
 
 }
 
@@ -272,8 +273,8 @@ main {
   position: absolute;
   z-index: 18;
   width: 450px;
-  top: calc(50% + 91.5px);
-  left: calc(50% - 601px);
+  top: calc(50% + 97px);
+  left: calc(50% - 439px);
 
 }
 
