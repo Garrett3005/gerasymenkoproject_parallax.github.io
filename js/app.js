@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
   const parallax_el = document.querySelectorAll(".parallax");
+  const main = document.querySelector("main");
   let xValue = 0,
     yValue = 0;
   let rotateDegree = 0;
@@ -28,6 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
   update(0);
 
   window.addEventListener("mousemove", (e) => {
+    if (timeline.isActive()) return;
+
     xValue = e.clientX - window.innerWidth / 2;
     yValue = e.clientY - window.innerHeight / 2;
 
@@ -35,6 +38,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     update(e.clientX);
   });
+
+  if (window.innerWidth >= 725) {
+    main.style.maxHeight = `${window.innerWidth * 0.6}px`;
+  } else {
+    main.style.maxHeight = `${window.innerWidth * 1.6}px`;
+  }
+
+  // GSAP Animation
 
   let timeline = gsap.timeline();
 
@@ -73,12 +84,10 @@ document.addEventListener("DOMContentLoaded", function () {
       "3"
     )
     .from(
-      ".hide",
-      {
-        opacity: 0,
-        duration: 1.5,
-      },
-      "3"
+      ".hide", {
+      opacity: 0,
+      duration: 1.5,
+    }, "3"
     );
 
 

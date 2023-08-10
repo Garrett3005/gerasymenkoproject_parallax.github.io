@@ -114,33 +114,35 @@ main {
 }
 
 .parallax {
-
-  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: none;
 
 }
 
 .bg-img {
   position: absolute;
   z-index: 1;
-  width: 2800px;
-  top: calc(50% - 390px);
-  left: calc(50% + 10px);
+  width: 194.44%;
+  top: 1.86%;
+  left: 50.69%;
+  z-index: 1;
 }
 
 .fog-7 {
   position: absolute;
   z-index: 2;
-  width: 1900px;
-  top: calc(50% - 100px);
-  left: calc(50% - 300px);
+  top: 37.7%;
+  left: 70.8%;
+  width: 132%;
 }
 
 .mountain-10 {
   position: absolute;
   z-index: 3;
-  width: 870px;
-  top: calc(50% + 69px);
-  left: calc(50% + 230px);
+  top: 63.58%;
+  left: 71.52%;
+  width: 132%;
+
 }
 
 .fog-6 {
@@ -250,35 +252,33 @@ main {
 .mountain-3 {
   position: absolute;
   z-index: 15;
-  width: 419px;
-  top: calc(50% + 133px);
-  left: calc(50% + 736px);
+  top: 61.35%;
+  left: 101.11%;
+  width: 32.22%;
 }
 
 .fog-2 {
   position: absolute;
   z-index: 16;
-  width: 1833px;
-  top: calc(50% + 95px);
-  left: calc(50% + 7px);
+  top: 68.14%;
+  left: 48%;
+  width: 108.33%;
 }
 
 .mountain-2 {
   position: absolute;
   z-index: 17;
-  width: 675px;
-  top: calc(50% + 188px);
-  left: calc(50% + 412px);
-
+  top: 69.01%;
+  left: 78.61%;
+  width: 47.91%;
 }
 
 .mountain-1 {
   position: absolute;
   z-index: 18;
-  width: 450px;
-  top: calc(50% + 91.5px);
-  left: calc(50% - 601px);
-
+  top: 52%;
+  left: 8.27%;
+  width: 37.15%;
 }
 
 .sun-rays {
@@ -294,18 +294,17 @@ main {
   position: absolute;
   z-index: 20;
   bottom: 0;
-  right: 0;
-  width: 100%;
+  right: 0%;
   pointer-events: none;
+  width: 100%;
 }
 
 .fog-1 {
   position: absolute;
   z-index: 21;
-  width: 1900px;
-  top: calc(50% - 100px);
-  left: calc(50% + 300px);
-
+  top: 59.26%;
+  left: 50.69%;
+  width: 111.8%;
 }
 
 .vignette {
@@ -317,4 +316,73 @@ main {
   left: 0;
   background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 0.7));
   pointer-events: none;
+}
+
+@media (max-width: 1100px) {
+  .text h1 {
+    font-size: 5.8rem;
+  }
+
+  .text h2 {
+    font-size: 4.7rem;
+  }
+}
+
+@media (max-width: 725px) {
+  .text h1 {
+    font-size: 5rem;
+    line-height: 1.1;
+  }
+
+  .text h2 {
+    font-size: 4.1rem;
+    line-height: 1.1;
+  }
+
+  header nav {
+    padding: 0 1rem;
+  }
+
+  .logo {
+    width: 75px;
+  }
+
+  header ul a {
+    font-size: 0.73rem;
+    padding: 0 0.9rem;
+  }
+
+  .search a {
+    font-size: 0.85rem;
+    padding: 0 1.8rem;
+  }
+
+  .hamburger {
+    padding-left: 0.9rem;
+  }
+
+  .hamburger a {
+    height: 30px;
+    width: 30px;
+  }
+
+  .bg-img {
+    width: initial;
+    height: 311.104%;
+  }
+
+  .fog-7 {
+    width: initial;
+    height: 211.2%;
+  }
+}
+
+@media (max-width: 520px) {
+  .text h1 {
+    font-size: 3.3rem;
+  }
+
+  .text h2 {
+    font-size: 2.6rem;
+  }
 }
